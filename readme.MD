@@ -66,3 +66,19 @@ VISUALIZE    :     OpenSearch (DB)      <---( Indexing & Search )---->  DASHBOAR
 
 # 프로젝트 재구성
 - docker-compose.yaml
+
+
+# Fluent-Bit(40~60MB) <-> Fluent-Bit(1~5MB)
+- 태그 기반 라우팅 도구(Tag Based Routing)
+- C 기반 작성
+- fluent-bit/etc/fluent-bit.conf 에서 구성 기술 완료
+- 목표
+    - 데이터 수집, 처리, 전달 -> ETL 도구
+    - 경량형 오픈 소스 로그 프로세서
+    - 고가용성, 고성능 처리, 데이터 처리 안정성
+- 파이프라인
+    - Input, Output, Service, Parser, Filter, Buffer, Routing
+    - Output: Kafka/Opensearch/Elasticsearch/s3/ ... 모두 가능함
+- conf 구성 -> 규칙 기술
+- 지원 플러그인
+    -     
