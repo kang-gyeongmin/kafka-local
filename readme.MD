@@ -63,3 +63,6 @@ MESSAGING    :     Kafka / MSK (Broker) <-------------------------------------+-
                v                                                               |
 VISUALIZE    :     OpenSearch (DB)      <---( Indexing & Search )---->  DASHBOARD (Kibana)
 ====================================================================================================
+
+# 프로젝트 재구성
+- docker-compose.yaml
